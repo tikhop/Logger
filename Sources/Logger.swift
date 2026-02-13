@@ -4,7 +4,7 @@ public class DefaultLogger: Logger, @unchecked Sendable {
     private let fileLogger: FileLogger
     private let osLogger: OSLogger
 
-    init(subsystem: LogSubsystem) {
+    public init(subsystem: LogSubsystem) {
         var config = FileLoggerConfiguration.default
         config.maximumNumberOfLogFiles = 3
         config.maximumFileAge = 60 * 60 * 24  // 24 hours

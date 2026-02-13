@@ -10,7 +10,7 @@ public enum LogLevel: Int, Comparable, Sendable {
         lhs.rawValue < rhs.rawValue
     }
 
-    var stringValue: String {
+    public var stringValue: String {
         switch self {
         case .debug: "DEBUG"
         case .info: "INFO"
