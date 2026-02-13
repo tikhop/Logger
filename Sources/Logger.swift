@@ -1,5 +1,15 @@
 import Foundation
 
+public protocol Logger: Sendable {
+    func log(
+        _ message: String,
+        level: LogLevel,
+        file: String,
+        function: String,
+        line: Int
+    )
+}
+
 public class DefaultLogger: Logger, @unchecked Sendable {
     private let fileLogger: FileLogger
     private let osLogger: OSLogger
