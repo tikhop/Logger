@@ -3,7 +3,7 @@ import Testing
 @testable import Logger
 
 struct LoggerTests {
-  @Test
-  func example() async throws {
-  }
+    @Test
+    func example() async throws {
+    }
 }
